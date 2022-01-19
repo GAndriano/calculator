@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(238, 223, 248);
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(73, 82, 175);
+    margin-top: 150px;
+    height: 500px;
+    width: 500px;
+    margin-left: 700px;
+    border-radius: 10px;
+    outline-color: black;
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+.buttons {
+    background-color: rgb(173, 162, 162);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    height: 280px;
+    padding: 20px;
+    border-radius: 5px;
+    outline-color: black;
+    outline-style: solid;
+    outline-width: 2px;
+    margin-top: 2px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0px;
+    font-size: 20px;
+    margin-top: 200px;
+
+}
+
+button {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: tomato;
+    font-size: 25px;
+}
+
+.screen {
+    outline-color: black;
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+.last,
+.current {
+    text-align: right;
+    background-color: white;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 2px;
+    width: auto;
+    height: 40px;
+    width: 390px;
+}
+
+.last {
+    margin-bottom: -2px;
+    
+}
+
+.calculator {
+    width: 400px;
+    height: 400px;
+    
+}
+
+#clearBtn {
+    background-color: rgb(255, 255, 65);
+}
+
+#sqrBtn, 
+#negateBtn,
+#decBtn,
+#divideBtn,
+#timesBtn,
+#minusBtn,
+#plusBtn {
+    background-color: rgb(85, 85, 85);
+}
+
+#deleteBtn {
+    background-color: rgb(255, 81, 81);
+}
+
+#equalsBtn {
+    background-color: rgb(88, 88, 255);
+}
