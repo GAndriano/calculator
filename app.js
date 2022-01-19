@@ -51,7 +51,7 @@ const decimalButton = document.getElementById("decBtn");
 const squareButton = document.getElementById("sqrBtn");
 
 decimalButton.addEventListener("click", () => {
-    currentScreen.textContent += "."
+    currentScreen.textContent =  currentScreen.textContent + "." 
     document.getElementById("decBtn").disabled = true
 })
 
@@ -96,9 +96,6 @@ numberButtons.forEach((button) =>
 
 operatorButtons.forEach((button) =>
     button.addEventListener("click", () => { 
-        if ((currentScreen.textContent = "") || (currentScreen.textContent = "0")) {
-            return 
-        }
         if (button.id == "timesBtn") {
             currentCalc = "x"
             firstNumber = currentScreen.textContent
@@ -128,7 +125,7 @@ operatorButtons.forEach((button) =>
                 resetPastScreen();
             }
         }
-        
+        document.getElementById("decBtn").disabled = false
         updatePastDisplay(" " + button.textContent);
         resetCurrentScreen();
         
@@ -205,7 +202,7 @@ const resetPastScreen = () => {
 }
 
 squareButton.addEventListener("click", () => {
-    let number = parseInt(currentScreen.textContent, 10);
+    let number = currentScreen.textContent;
     currentScreen.textContent = squared(number);
 })
 
@@ -213,4 +210,3 @@ deleteButton.addEventListener("click", () => {
     let delText = currentScreen.textContent;
     currentScreen.textContent = delText.slice(0,-1)
 })
-
